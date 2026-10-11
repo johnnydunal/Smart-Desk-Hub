@@ -173,4 +173,4 @@ Here is a 3D render of what the board looks like so far, but of course this will
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/KvD7dTJaHVfjYIigORhVQkYxq5FrUFSP/c82fc7fd3c0344b3ea12deda656cbc235eee8ca6ecea74de57271a6c67958aee.png)
 
-I also started working on the code, beginning to add functions for managing time, weather, and calendar events, and I'll finalize it and the PCB board tomorrow. It's already 11pm now so I'm like mentally toasted by now but am looking forward to finishing this project tomorrow.
+I also started working on the code, beginning to add functions for managing time, weather, and calendar events, and I'll finalize it and the PCB board tomorrow. It's already 11pm now so I'm like mentally toasted by now but am looking forward to finishing this project tomorrow!
