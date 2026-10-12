@@ -12,3 +12,28 @@ Anyways, I'm now working on planning and designing the PCB board for this new pr
 ![The beginnings of the PCB design for the smart desk hub.](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/KvD7dTJaHVfjYIigORhVQkYxq5FrUFSP/05f5caeddaaebf72280a5da88365c8a52838798ed09a1d0af46319bc03e8a4c3.png)
 
 I'm planning to also use a Raspberry Pi 4 board to allow fast and efficient audio to text conversion for the ai voice assistant, and the ESP32 for controlling the display, connecting to APIs, calculating the time, or reading sensor data.
+
+## Firmware
+
+The initial ESP32-S3 firmware lives in [`firmware/main.cpp`](firmware/main.cpp).
+It currently provides:
+
+- Wi-Fi connection and NTP time synchronization
+- Periodic weather and calendar JSON requests from the local Raspberry Pi service
+- A hardware-neutral status renderer over the serial monitor while the e-paper
+  panel is being selected
+- A status POST endpoint for the local assistant service
+- Explicit sensor and network failure reporting instead of displaying fabricated data
+
+Build with PlatformIO:
+
+```text
+pio run
+pio device monitor
+```
+
+Before flashing, update the Wi-Fi credentials, service URLs, and UTC offset in
+`firmware/main.cpp`. The weather, calendar, and assistant service contracts are
+documented beside their URL settings. The room-sensor and e-paper driver are
+left as the next hardware-specific integration step because the PCB design has
+not selected those parts yet.
