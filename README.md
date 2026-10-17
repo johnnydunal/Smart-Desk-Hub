@@ -12,4 +12,4 @@ The Smart Desk Hub is an ambient smart desktop display station powered by an E-P
 - Environmental Sensor: Adafruit BME280 (Temperature, Humidity, Pressure)
 - Display: 4.2inch Waveshare E-Ink display module
 
-![Screenshot 2026-10-11 222031](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/KvD7dTJaHVfjYIigORhVQkYxq5FrUFSP/94fbe347142d37ecc0e7818186c9ef7aece6aaa2bb3272c453f3b10d86a24e6d.png)
+![Screenshot 2026-10-16 200249](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/KvD7dTJaHVfjYIigORhVQkYxq5FrUFSP/63dceae36a6d38740aed6a8e699f4bdafd41f2c8d44fba4492c9ca115a641c96.png)
